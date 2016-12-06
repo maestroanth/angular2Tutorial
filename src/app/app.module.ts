@@ -6,13 +6,12 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { SimpleFormComponent } from './simple-form/simple-form.component';
 import { MailService } from './mail.service';
-import { HTTPTESTComponent } from './httptest/httptest.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     SimpleFormComponent,
-    HTTPTESTComponent
   ],
   imports: [
     BrowserModule,
@@ -22,8 +21,6 @@ import { HTTPTESTComponent } from './httptest/httptest.component';
   providers: [
     {provide:'mail', useClass:MailService},
     {provide: 'api', useValue: 'https://api.github.com/users/hadley/orgs'},
-    {provide: 'httpget', useClass:HttptestService},
-
 ],
   bootstrap: [AppComponent]
 })

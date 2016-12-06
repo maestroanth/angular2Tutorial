@@ -14,5 +14,6 @@ export class AppComponent {
     @Inject('mail') private mail,
     @Inject('api') private api,
     /*@Inject('httpget') private httpget,*/
-   ){}
+   ){
+}
 }
